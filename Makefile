@@ -22,3 +22,6 @@ $(BIN)/%/output.png: $(BIN)/%/main
 	$< 
 
 test: $(BIN)/${HL_TARGET}/output.png
+
+clean:
+	rm -rf $(BIN)
