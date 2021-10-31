@@ -4,6 +4,8 @@ ToneMapping using Halide
 # Requirement
 Halide: 12.0.0 or above
 
+2.armadillo: 10.6.2
+
 # Methods
 1.Resize input image to get low resolution image for deep learning.
 
