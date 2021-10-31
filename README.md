@@ -2,9 +2,9 @@
 ToneMapping using Halide
 
 # Requirement
-1.Halide: 12.0.0 or above
+1.Halide: 12.0.0 or above: https://github.com/halide/Halide
 
-2.armadillo: 10.6.2
+2.armadillo: 10.6.2: http://arma.sourceforge.net/download.html
 
 # Methods
 1.Select sample points randomly from each images.
