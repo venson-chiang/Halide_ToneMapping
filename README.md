@@ -2,18 +2,16 @@
 ToneMapping using Halide
 
 # Requirement
-Halide: 12.0.0 or above
+1.Halide: 12.0.0 or above
 
 2.armadillo: 10.6.2
 
 # Methods
-1.Resize input image to get low resolution image for deep learning.
+1.Select sample points randomly from each images.
 
-2.Apply laplacian pyramid and deep learning model to correct exposure of image.
+2.Apply Paul Debevec's method to get radiance map.
 
-3.Apply Bilateral Guided Upsampling to get high resolution exposure corrected image. 
-
-4.Fuse input image and exposure corrected image to get better performance of exposure correction.
+3.Apply Global Tonemapping to fuse all images.
 
 # Input images
 Input images are reference from https://github.com/qhan1028/HDR-Imaging/tree/master/data/memorial
@@ -34,4 +32,8 @@ make test
 ```
 
 # Reference
-ToneMapping model is reference to https://github.com/qhan1028/HDR-Imaging
+ToneMapping model is reference to 
+
+https://github.com/qhan1028/HDR-Imaging
+
+https://github.com/deepankarc/hdr-imaging
